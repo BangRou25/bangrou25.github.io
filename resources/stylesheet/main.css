@@ -1,0 +1,19 @@
+body {
+    
+}
+
+a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+li {
+    display: inline;
+    margin-inline: 1rem;
+
+}
+
+ul {
+    text-align: right;
+    padding: 0px;
+}
