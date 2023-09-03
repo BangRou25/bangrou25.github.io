@@ -1,3 +1,5 @@
+/* Copyright 2023 BangRou25. All rights reserved */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 
 * {
@@ -5,6 +7,13 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.author {
+  color: #e09969;
+  text-decoration: underline;
+  font-style: normal;
 }
 
 #navbar {
@@ -22,16 +31,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 28px 0;
+  padding: 21px 0;
 }
 
 .navbar-title a {
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .navbar-items a {
-  font-family: 'Roboto Mono', monospace;
   font-weight: 400;
 }
 
@@ -39,7 +47,7 @@
   color: #e09969;
   padding: 0 21px;
   text-decoration: underline;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .navbar-buttons a:hover {
@@ -52,18 +60,20 @@ main {
   background-color: #212223;
 }
 
+section {
+  padding: 48px 10%;
+}
+
 #navbar-underlay {
-  height: 79.52px;
+  height: 63px;
 }
 
 #banner {
-  height: 720px;
+  height: 480px;
   background-color: #418bd5;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Roboto Mono', monospace;
-
 }
 
 #banner h1 {
@@ -71,3 +81,28 @@ main {
   font-size: 48px;
   color: #fff;
 }
+
+#about {
+  display: flex;
+  flex-direction: column;
+  background-color: #27292a;
+}
+
+.section-content-title {
+  font-size: 18px;
+  padding-bottom: 24px;
+}
+
+.dark-title {
+  color: #fff;
+}
+
+.dark-text {
+  color: #ddd;
+}
+
+.section-content-text {
+  font-size: 14px;
+}
+
+/* ----------------------------- <footer> section ----------------------------- */
