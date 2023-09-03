@@ -21,26 +21,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
+  padding: 28px 0;
 }
 
 .navbar-title a {
   color: #fff;
+  font-size: 18px;
 }
 
 .navbar-items a {
-  font-size: 18px;
   font-family: 'Roboto Mono', monospace;
 }
 
 .navbar-buttons a {
-  color: #df6e23;
+  color: #e09969;
   padding: 0 21px;
   text-decoration: underline;
+  font-size: 16px;
 }
 
-.navbar-items a:hover {
-  color: #306ba6;
+.navbar-buttons a:hover {
+  color: #418bd5;
 }
 
 /* <main> section */
@@ -50,7 +51,7 @@ main {
 }
 
 #navbar-underlay {
-  height: 71.51px;
+  height: 79.52px;
 }
 
 #banner {
