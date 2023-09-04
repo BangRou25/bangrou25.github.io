@@ -1,108 +1,70 @@
-/* Copyright 2023 BangRou25. All rights reserved */
+/* Copyright 2023 BangRou25 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
+/* css config */
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Roboto Mono', monospace;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
-.author {
-  color: #e09969;
-  text-decoration: underline;
-  font-style: normal;
-}
+* {box-sizing: border-box; margin: 0; padding: 0; text-decoration: none;}
 
-#navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10%;
-  background-color: #212223;
+/* navbar config */
+
+.navbar-bg {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(5px);
-  position: fixed;
-  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
 }
-
-.navbar-items {
+.navbar {
+  margin: 0 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 21px 0;
 }
 
-.navbar-title a {
-  color: #fff;
+.navbar-logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+}
+
+.navbar-logo a {
+  color: #00588f;
+}
+
+.navbar-menu {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: 16px;
+  display: flex;
+  padding: 12px 0;
 }
 
-.navbar-items a {
-  font-weight: 400;
+.navbar-menu-container {
+  padding: 12px 3px;
+  display: flex;
 }
 
-.navbar-buttons a {
-  color: #e09969;
-  padding: 0 21px;
-  text-decoration: underline;
-  font-size: 14px;
+.navbar-menu-container a {
+  padding: 6px 9px;
+  border-radius: 3px;
+  color: #505050;
 }
 
-.navbar-buttons a:hover {
-  color: #418bd5;
+.navbar-menu-container a:hover {
+  background-color: rgba(146, 146, 146, 0.4);
+  color: #000;
 }
 
-/* ----------------------------- <main> section ----------------------------- */
-
+/* main config */
 main {
-  background-color: #212223;
-}
-
-section {
-  padding: 48px 10%;
-}
-
-#navbar-underlay {
-  height: 63px;
+  margin: 0 10%;
 }
 
 #banner {
-  height: 480px;
-  background-color: #418bd5;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 24px 0;
+  height: 720px;
+  background-color: aqua;
+  border-radius: 24px;
 }
-
-#banner h1 {
-  text-align: center;
-  font-size: 48px;
-  color: #fff;
-}
-
-#about {
-  display: flex;
-  flex-direction: column;
-  background-color: #27292a;
-}
-
-.section-content-title {
-  font-size: 18px;
-  padding-bottom: 24px;
-}
-
-.dark-title {
-  color: #fff;
-}
-
-.dark-text {
-  color: #ddd;
-}
-
-.section-content-text {
-  font-size: 14px;
-}
-
-/* ----------------------------- <footer> section ----------------------------- */
