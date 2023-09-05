@@ -1,13 +1,13 @@
 /* Copyright 2023 BangRou25 */
 
 /* css config */
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 * {box-sizing: border-box; margin: 0; padding: 0; text-decoration: none; font-family: 'Roboto', sans-serif;}
+strong.author {font-style:normal; color: rgb(0, 217, 255);}
+strong.p-highlight {font-style: normal; color: #222;}
 
 /* navbar config */
-
 .navbar-bg {
   position: sticky;
   position: -webkit-sticky;
@@ -21,6 +21,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom-width: 1px;
+  border-bottom-color: #aaa;
+  border-bottom-style: solid;
 }
 
 .navbar-logo {
@@ -57,11 +60,8 @@
 
 /* main config */
 body {background-color: #f8f8f8;}
-main {margin: 0 10%;}
-strong {color: rgb(0, 217, 255);}
 
 /* heading config */
-
 h1 {
   font-weight: 700;
   font-size: 72px;
@@ -70,20 +70,24 @@ h1 {
 h2 {
   font-weight: 700;
   font-size: 36px;
+  margin-bottom: 12px;
+  color: #666;
 }
 
 p {
   font-weight: 400;
   color: #333;
+  font-size: 18px;
+  line-height: 24px;
 }
 
 /* section config */
 
 /* banner */
 #banner {
-  margin: 24px 0;
-  height: 720px;
-  border-radius: 24px;
+  margin: 24px 10%;
+  min-height: 480px;
+  border-radius: 15px;
   box-shadow: 0 0 24px rgb(0, 217, 255);
   background-image: url('/resources/img/banner/banner-bg.png');
   background-repeat: no-repeat;
@@ -100,26 +104,111 @@ p {
   line-height: 68px;
 }
 
-#banner-link {
+.banner-link {
   margin: 21px 48px;
 }
 
-#banner-link a {
-  font-size: 24px;
+.banner-link a {
+  font-size: 18px;
   color: rgb(41, 151, 255);
 }
 
-#banner-link a:hover {
+.banner-link a:hover {
   text-decoration: underline;
 }
 
 /* company */
 #company {
-  margin: 24px 0;
-  padding: 48px;
-  border-radius: 24px;
-  box-shadow: 0 0 24px #333;
+  margin: 0 10%;
+  padding: 72px 24px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #aaa;
+}
+
+.section-row {
+  max-width: 50%;
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.section-link {
+  margin-top: 12px;
+}
+
+.section-link a {
+  font-size: 18px;
+  color: rgb(41, 151, 255);
+}
+
+.section-link a:hover {
+  text-decoration: underline;
+}
+
+.company-img {
+  margin: auto;
+  height: 125px;
+}
+
+/* project */
+#project {
+  margin: 0 10%;
+  padding: 72px 48px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #aaa;
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.project-content-row {
+  margin: 12px;
+  border-radius: 10px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #aaa;
+  padding: 24px;
+  background-color: #fff;
+  box-shadow: 0 0 10px #aaa;
+}
+
+/* client */
+#client {
+  margin: 0 10%;
+  padding: 72px 48px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* footer config */
+footer {
+  background-color: #eee;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #aaa;
+  padding: 72px 10%;
+}
+
+footer p {
+  font-size: 14px;
 }
